@@ -8,13 +8,6 @@ import { authConfig } from 'projects/flight-app/src/app/auth.config';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private oauthService: OAuthService) { 
 
-    oauthService.configure(authConfig);
-
-    // tryLogin: Step 2
-    oauthService.loadDiscoveryDocumentAndTryLogin();
-
-  }
 }
 
